@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="portafolio" />
+	<meta name="author" content="nombre del autor" />
+	<meta name="keywords" content="palabra clave1, palabra clave2, palabraclave3" />
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Portafolio Web</title>
+
+    <!--Para usar el jquery y el archivo js-->
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+
+    <!--BOOTSTRAP-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <!--Creo los estilos y todo-->
+
+    <link rel="stylesheet" href="estiloinicio.css">
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+    
+        <!-- HEADER -->
+    
+        <header class="cabecera">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!--nav-->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <a class="navbar-brand mr-3 ml-3" href="#!"> &lt;Giuly/&gt; </a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav ml-auto mr-auto mt-md-0">
+
+                        <li class="nav-item active">
+                            <a class="nav-link nav-selected inicio-Menu" href="#!"> Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link habilidades-Menu" href="#!"> Habilidades </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link portafolio-Menu" href="#!"> Portafolio </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav nav-cv">
+
+                        <li class="nav-item">
+                            <a class="nav-link-cv" href="CV Giuliano Francesco De Palma.pdf" target="_black">Descargar CV</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <span class="separador-headernav"></span>
+
+        </header>
+
+        <!-- PERFIL LATERAL -->
+        <section class="Left-profile-header">
+
+            <div class="perfilLat">
+
+                <div class="perfilLat_close">
+                    <div class="arrow"><div class="rightarrow"></div></div>
+                    
+                    <p> P E R F I L </p> 
+                    
+                    <div class="arrow"><div class="rightarrow"></div></div>
+                </div>
+
+                <div class="perfilLat_content">
+                    
+                    <div class="perfil"><img src="images/profile/pp.jpg" alt=""/></div>
+                    
+                    <div class="descripcion">
+                        <p>
+                            Estudio Lic. en ciencias de la computación en la UBA.
+                            En mis tiempos libres me dedico a realizar diversos cursos para aprender nuevas tecnologías.♥
+                        </p>
+                    </div>
+
+                    <div class="contacto">
+                        <p>Contacto</p>
+                        <div class="redes">
+                            <a href="https://www.instagram.com/giuly.hdr/" target="_blank" class="redes_link"> <img src="images/profile/instagram.png" alt=""/> </a>
+                            <a href="https://www.linkedin.com/in/giuliano-de-palma/" target="_blank" class="redes_link"> <img src="images/profile/linkedin.png" alt=""/> </a>
+                            <a href="https://github.com/Giuliano-01" target="_blank" class="redes_link"> <img src="images/profile/logotipo-de-github.png" alt=""/> </a>
+                            <a href="mailto:giulianodepalma@outlook.com?subject=Portafolio%20Web&body=Hola,%20Giuliano%20" target="_blank" class="redes_link"> <img src="images/profile/outlook.png" alt=""> </a>
+                            <a href="https://api.whatsapp.com/send?phone=+5492224538266&text=Hola, me agradó tu portafolio web!" target="_blank" class="redes_link"> <img src="images/profile/whatsapp.png" alt="">  </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        
+
+        <!-- BANNER INICIAL -->
+
+        <section class="banner">
+
+            <div class="banner-content">
+
+                <h1>Giuliano De Palma</h1>
+
+            </div>
+
+        </section>
+    
+    <!-- HABILIDADES -->
+        <section class="habilidades-container">
+
+            <h2>Habilidades</h2>
+
+            <div class="tipodehabilidad">
+                <h2> Diseño Web </h2>
+                <div class="habilidades">
+
+                    <div class="habilidad">
+                        <div class="imghabilidad">
+                            <img src="images/skills/html-5.png" alt="">
+                        </div>
+                        <h3>Html</h3>
+                    </div>
+                    <div class="habilidad">
+                        <div class="imghabilidad">
+                            <img src="images/skills/css-3.png" alt="">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="habilidad">
+                        <div class="imghabilidad">
+                            <img src="images/skills/javascript.png" alt="">
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="habilidad">
+                        <div class="imghabilidad">
+                            <img src="images/skills/bootstrap.png" alt="">
+                        </div>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="habilidad">
+                        <div class="imghabilidad">
+                            <img src="images/skills/jquery.png" alt="">
+                        </div>
+                        <h3>jQuery</h3>
+                    </div>
+                    <div class="habilidad">
+                        <div class="imghabilidad">
+                            <img src="images/skills/Vue.png" alt="">
+                        </div>
+                        <h3>Vue js</h3>
+                    </div>
+                    <div class="habilidad">
+                        <div class="imghabilidad">
+                            <img src="images/skills/react.png" alt="">
+                        </div>
+                        <h3>React js</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tipodehabilidad">
+                <h2> Bases de Datos </h2>
+
+                <div class="habilidades">
+
+                    <div class="habilidad">
+                        <div class="imghabilidad">
+                            <img src="images/skills/mysql.png" alt="">
+                        </div>
+                        <h3>MySql</h3>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="tipodehabilidad">
+                <h2> Control de versiones </h2>
+
+                <div class="habilidades">
+
+                    <div class="habilidad">
+                        <div class="imghabilidad">
+                            <img src="images/skills/git.png" alt="">
+                        </div>
+                        <h3>Git</h3>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+    <!-- PORTAFOLIO -->
+
+        <section class="proyectos-container">            
+                    
+            <h1 class="tituloproyectos">Portafolio</h1>
+            
+            <div class="proyectos">
+                <!--Proyecto1-->
+                <section class="proyecto">
+                    <hgroup>
+                        <h1> <ins>Carrito Jquery</ins> </h1>
+                        <h2> Carrito de compras con productos que puedes ir agregando/eliminando. <br/> (utilizo jQuery) </h2>
+                    </hgroup>
+                            
+                    <a href="https://github.com/Giuliano-01/Web-Jquery" target="_blank">
+                        <footer>
+                            <p> ver mas+ </p>
+                        </footer>
+                    </a>
+                </section>
+
+                <!--Proyecto2-->
+                <section class="proyecto">
+                    <hgroup>
+                        <h1> <ins>Web Bootstrap</ins> </h1>
+                        <h2> Pagina de servicios de software de ejemplo. <br/> (utilizo Bootstrap) </h2>
+                    </hgroup>
+                            
+                    <a href="https://github.com/Giuliano-01/Web-Bootstrap" target="_blank">
+                        <footer>
+                            <p> ver mas+ </p>
+                        </footer>
+                    </a>
+                </section>
+
+                <!--Proyecto2-->
+                <section class="proyecto">
+                    <hgroup>
+                        <h1> <ins>E-Commerce Javascript</ins> </h1>
+                        <h2> Pagina principal de una tienda de ropa online. <br/> (utilizo Javascript) </h2>
+                    </hgroup>
+                            
+                    <a href="https://github.com/Giuliano-01/Ecommerce_mainpage_responsive" target="_blank">
+                        <footer>
+                            <p> ver mas+ </p>
+                        </footer>
+                    </a>
+                </section>
+
+
+                <!--Proyecto2-->
+                <section class="proyecto">
+                    <hgroup>
+                        <h1> <ins>Portafolio Web</ins> </h1>
+                        <h2> Este portafolio web! </h2>
+                    </hgroup>
+                            
+                    <a href="https://github.com/Giuliano-01/Portafolio-Web" target="_blank">
+                        <footer>
+                            <p> ver mas+ </p>
+                        </footer>
+                    </a>
+                </section>
+
+                <!--Proyecto2-->
+                <section class="proyecto">
+                    <hgroup>
+                        <h1> <ins>Quinto proyecto</ins> </h1>
+                        <h2> descripcion del quinto proyecto descripcion del quinto proyecto descripcion del quinto proyecto </h2>
+                    </hgroup>
+                            
+                    <a href="" target="_blank">
+                        <footer>
+                            <p> ver mas+ </p>
+                        </footer>
+                    </a>
+                </section>
+
+                <!--Proyecto2-->
+                <section class="proyecto">
+                    <hgroup>
+                        <h1> <ins>Sexto proyecto</ins> </h1>
+                        <h2> descripcion del sexto proyecto descripcion del sexto proyecto descripcion del sexto proyecto </h2>
+                    </hgroup>
+                            
+                    <a href="" target="_blank">
+                        <footer>
+                            <p> ver mas+ </p>
+                        </footer>
+                    </a>
+                </section>
+                
+            </div>
+
+        </section>
+    
+    <!-- FOOTER -->    
+    
+        <footer class="pie">
+            Ultima actualización 31/01/2022.
+        </footer>
+        
+    </div>
+
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+*{
+	margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;	
+}
+
+/*scrollbar*/
+::-webkit-scrollbar{
+    width: 12px;
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(43, 88, 150);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+    background-color: white;
+}
+
+/* CABECERA MENUS */
+.bg-light{
+    background-color: rgba(255, 255, 255, 0.815)!important;
+}
+    .bg-light:hover{
+        background-color: white!important;
+    }
+    .cabecera{ 
+        position: absolute;
+        z-index: 100;
+
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+        /*logo*/
+        .navbar-brand{
+            font-size: 25px;
+            font-weight: 600;
+            text-shadow: 0 0 1px rgba(0, 0, 0, 0.76);
+            cursor:default;
+        }
+        /*menu nav*/
+            /*opc*/
+            .nav-link{
+                padding: 5px 0;
+                margin: 3px 3px;
+                
+                border: 2px solid rgba(255, 255, 255, 0);
+            }
+                .nav-link:hover{
+                    border-bottom: 2px solid rgb(5, 30, 168);
+                }
+            .nav-selected{
+                border-bottom: 2px solid rgba(13, 17, 231, 0.438);
+            }
+            /*cv*/
+            .nav-cv{
+                margin-top: -8px;
+                display: flex;
+                align-items: center;
+            }
+            .nav-link-cv{
+                text-decoration: none;
+                color:black;
+                border: 1px solid black;
+                padding: 10px 10px;
+            }
+                .nav-link-cv:hover{
+                    text-decoration: none;
+                    color: rgba(13, 17, 231, 0.438);
+                    border: 1px solid rgba(13, 17, 231, 0.438);
+                }
+            .separador-headernav{
+                position: absolute;
+                top: 55.49px;
+                border: 1px solid rgba(0, 0, 0, 0.205);
+                width: 100%;
+            }
+
+/* BANNER */
+.banner {
+    width: 100%;
+    height: 30vh;
+    margin-top: 70px;
+
+    background: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg);
+}
+
+    .banner-content{
+        width: 100%;
+        height: 100%;
+        color: white;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .banner-content h1{
+            width: fit-content;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.205);
+            /*responsive*/
+            font-size: calc(.2rem + 6vw);
+            color: rgb(71, 71, 71);           
+        }
+
+/* PERFIL LATERAL */
+.Left-profile-header{
+    position: fixed;
+}
+.perfilLat{
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 0px 30px 30px 0px;
+    
+    top: 0px;
+    left: -300px;
+    width: 350px;
+    height: 83vh;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    transition: all .5s;
+}
+.perfilLat:hover{
+    left: 0px;
+}
+    .perfilLat_close{
+        border: 1px solid rgba(0, 0, 0, 0.493);
+        background-color: rgba(43, 88, 150, 0.562);
+        border-radius: 0px 25px 25px 0px;
+        width: 35px;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        
+        color: rgba(255, 255, 255, 0.842);
+    }
+        .perfilLat_close > p{
+            font-size: 25px;
+            text-shadow: 0 0 3px black;
+            margin-left: 25%;
+        }
+        .arrow{
+            margin: 50px 10px;
+        }
+        .rightarrow{
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            padding: 3px;
+            transform: rotate(-45deg);
+        }
+
+    /*content*/
+    .perfilLat_content{
+        border: 1px solid black;
+        background-color: rgba(255, 255, 255, 0.815);
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 5px;
+    }
+    .perfilLat_content:hover{
+        background-color: white;
+    }
+        .perfil{
+            border: 6px solid rgba(43, 88, 150, 0.5);
+            
+            border-radius: 100px;
+            width: 160px;
+            height: 160px;
+            overflow: hidden;
+        }
+            .perfil img{
+                width: 100%;
+                height: 100%;
+            }
+        .descripcion{
+            margin-top: 5%;
+            border: 3px solid rgba(43, 88, 150, 0.5);
+            padding: 3px 10px;
+            
+            width: 90%;
+            height: fit-content;
+
+            font-size: 1rem;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .contacto{
+            margin-top: 7%;
+
+            width: 90%;
+            height: 25%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .contacto > p{
+                border-bottom: 2px solid black;
+                font-weight: 600;
+                font-size: 23px;
+            }
+            .redes{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            .redes > a > img{
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+            .redes_link{
+                width: 33px;
+                height: 33px;
+                overflow: hidden;
+            }
+        
+/*Habilidades*/
+.habilidades-container{
+    border: 3px solid rgba(71, 71, 71, 0.425);
+    width: 80%;
+    padding: 15px 20px;
+    margin: 3% 10%;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .habilidades-container > h2{
+        color: black;
+        border-bottom: 2px solid black ;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+    .tipodehabilidad{   
+        border: 3px inset rgb(255, 255, 255);
+        border-radius: 30px;
+        box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+        background: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg);
+
+        padding: 5px 5px;
+        margin-bottom: 4%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+        .tipodehabilidad > h2{
+            color: black;
+            width: fit-content;
+            background-color: rgba(255, 255, 255, 0.295);
+            border-radius: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    .habilidades{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 3%;
+    }
+    /*circulos*/
+    .habilidad{
+        margin-right: 2%;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .habilidad h3{
+            font-size: 1rem;
+            text-align: center;
+        }
+        .imghabilidad{
+            margin: 2% 2%;
+        }
+        .imghabilidad img{
+            width: 55px;
+        }
+
+/*PROYECTOS*/
+
+.proyectos-container{
+    border: 3px solid rgba(71, 71, 71, 0.425);
+    width: 80%;
+    height: fit-content;
+    padding: 15px 20px;
+    margin: 3% 10%;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .tituloproyectos{
+        color: black;
+        border-bottom: 2px solid black ;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+
+    .proyectos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        .proyecto{
+            border: 3px inset rgb(255, 255, 255);
+            border-radius: 30px;
+            box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+            background: url("https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg");
+    
+            width: 250px;
+            height: 350px;
+            margin:auto;
+            margin-bottom: 5%;
+            color: black;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+            .proyecto h1{
+                color: black;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                padding-top: 20px;
+            }
+            .proyecto h2{
+                margin: 2% 3%;
+                color: #101010;
+                text-align: center;
+                font-size: 1rem;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                padding-bottom: 0;
+                background: rgba(85, 85, 85, 0.116);
+            }
+
+            .proyecto a{
+                width: 120px;    
+                margin: 1% 8%;
+                height: fit-content;
+                text-decoration: none;
+            }
+            .proyecto footer{
+                width: 100%;
+                height: 40px;
+                padding: 3px 10px;
+                border: 1px solid rgb(255, 255, 255);
+
+                font-size: 18px;
+                color: white;
+
+                text-align: center;
+            }
+            .proyecto footer:hover{
+                background: white;
+                color: black;
+                border: 1px solid rgb(0, 0, 0);
+            }
+
+
+
+    .pie{
+        /*dejan de flotar los elem anteriores*/
+        clear: both;
+        padding: 20px;
+        background: #2d3436;
+        color: white;
+        text-align: center;
+        grid-area: pie;
+    }
+    .columna{
+        margin: 20px 0px;
+        /*ocupa el 30%*/
+        /*como el padding y el margen agregan un espaciado que tambien se cuenta no uso el 40% aca*/
+        width: 30%;
+        float: left;
+    }
+    
+    .columna blockquote{
+        border: 1px solid black;
+        padding: 40px;
+        background: #fffbb9;
+        margin-bottom: 20px;
+    }
