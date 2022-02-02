@@ -13,7 +13,6 @@
     --background-2: rgb(18, 53, 87);
 }
 
-
 /*scrollbar*/
 ::-webkit-scrollbar{
     background: var(--background-2);

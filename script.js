@@ -22,6 +22,8 @@ $(document).ready(function(){
         console.log(window.scrollY);
     });
     
+    /*display habilidades*/
+
     $('.more-info-link-container').on('click', '.flechaabajo',function(event){
         event.preventDefault();
         if($('.more-info-link-container').children().hasClass("flechaarriba")){
@@ -34,5 +36,16 @@ $(document).ready(function(){
         $('.more-info-link-container').children().toggleClass('flechaarriba');
         
     });
+
+
+    /*toogle dark/light mode*/
+    var htmlvar =   '<link rel="stylesheet" href="estiloNocturno.css">';
+    $('.btn-light').on('click',function(){
+        $( '.activarNocturno' ).empty();
+    });
+    $('.btn-dark').on('click',function(){
+        $('.activarNocturno').append(htmlvar);
+    });
+    
 
 });

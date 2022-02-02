@@ -6,6 +6,34 @@
     box-sizing: border-box;	
 }
 
+
+.btn-light{
+    background-color: rgb(209, 209, 209);
+    border: none;
+}
+.btn-light:hover{
+    background-color: white;
+}
+.btn-dark{
+    background-color: rgb(49, 49, 49);
+    border: none;
+}
+.btn-dark:hover{
+    background-color: black;
+}
+
+.btn-light.active{
+    background-color: white!important;
+    border: none!important;
+    outline: 2px outset black;
+}
+.btn-dark.active{
+    background-color: black!important;
+    border: none!important;
+    outline: 2px outset white;
+}
+
+
 /*scrollbar*/
 ::-webkit-scrollbar{
     width: 12px;
@@ -119,6 +147,7 @@ body{
 /* PERFIL LATERAL */
 .Left-profile-header{
     position: fixed;
+    z-index: 300;
 }
 .perfilLat{
     position: absolute;
@@ -136,9 +165,13 @@ body{
     transition: all .5s;
 }
 .perfilLat:hover{
-    left: 0px;
+    left: -15px;
+}
+.perfilLatdesactivar{
+    left: -300;
 }
     .perfilLat_close{
+        cursor: pointer;
         border: 1px solid rgba(0, 0, 0, 0.493);
         background-color: rgba(43, 88, 150, 0.562);
         border-radius: 0px 25px 25px 0px;

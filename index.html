@@ -28,7 +28,10 @@
     <!--Creo los estilos y todo-->
 
     <link rel="stylesheet" href="estiloinicio.css">
-    <link rel="stylesheet" href="estiloNocturno.css">
+    <div class="activarNocturno">
+        
+    </div>
+    
 
 </head>
 
@@ -128,6 +131,21 @@
             <div class="banner-content">
 
                 <h1>Giuliano De Palma</h1>
+
+                <ul class="navbar-nav nav-changemode mt-4">
+
+                    <li class="nav-item">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary btn-light active">
+                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Light
+                            </label>
+                            <label class="btn btn-secondary btn-dark">
+                              <input type="radio" name="options" id="option2" autocomplete="off"> Dark
+                            </label>
+                          </div>
+                    </li>
+
+                </ul>
 
             </div>
 
