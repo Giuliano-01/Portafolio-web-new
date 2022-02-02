@@ -1,0 +1,174 @@
+
+/*colores modo oscuro*/
+:root {
+    --text: rgb(187, 187, 187);
+    --text-hover: rgb(236, 236, 236);
+    --border-hover: rgb(212, 212, 212);
+    --border-selected: rgb(255, 255, 255);
+    --bordes: rgba(255, 254, 254, 0.377);
+    /*cabecera*/
+    --background-items: black;
+    --background-items-hover: #151E21;
+    --background: rgb(4, 22, 46);
+    --background-2: rgb(18, 53, 87);
+}
+
+
+/*scrollbar*/
+::-webkit-scrollbar{
+    background: var(--background-2);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--background);
+}
+
+body{
+    background-color: var(--background);
+}
+
+/* CABECERA NOCTURNA */
+.bg-light{
+    background-color: var(--background)!important;
+}
+    .bg-light:hover{
+        background-color: var(--background)!important;
+    }
+        /*logo*/
+        .navbar-brand{
+            color: var(--text)!important;
+        }
+        /*menu nav*/
+            /*opc*/
+            .nav-link{
+                color: var(--text)!important;
+            }
+                .nav-link:hover{
+                    border-bottom: 2px solid var(--border-hover);
+                    color: var(--text-hover)!important;
+                }
+            .nav-selected{
+                border-bottom: 2px solid var(--border-selected);
+                color: var(--text-hover)!important;
+            }
+            /*cv*/
+            .nav-link-cv{
+                color:var(--text);
+                border: 1px solid var(--text);
+            }
+                .nav-link-cv:hover{
+                    color: var(--text-hover);
+                    border: 1px solid var(--text-hover);
+                }
+            .separador-headernav{
+                border: 1px solid var(--bordes);
+            }
+
+/* BANNER NOCTURNO */
+.banner {
+    background: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg);
+}
+    .banner-content h1{
+        border-bottom: 3px solid rgb(39, 39, 39);
+        color: rgb(39, 39, 39);
+    }
+
+/* PERFIL LATERAL NOCTURNO*/
+.perfilLat{
+    border: 1px solid var(--bordes);
+}
+    .perfilLat_close{
+        border: 1px solid var(--bordes);
+        background-color: var(--background-2);
+        
+        color: var(--text);
+    }
+    /*content*/
+    .perfilLat_content{
+        border: 1px solid black;
+        background-color: var(--background)!important;
+    }
+        .perfil{
+            border: 6px solid var(--background-2);
+        }
+        .descripcion{
+            border: 3px solid var(--background-2);
+            color: var(--text)!important;
+        }
+        .contacto{
+            color: var(--text)!important;
+        }
+            .contacto > p{
+                border-bottom: 2px solid var(--bordes);
+            }
+
+/*Habilidades Nocturno*/
+.habilidades-container{
+    border: 3px solid var(--bordes);
+}
+    .habilidades-container > h2{
+        color: var(--text);
+        border-bottom: 2px solid var(--bordes) ;
+    }
+    .tipodehabilidad{   
+        border: 3px inset var(--bordes);
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.384);
+        background: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg);
+    }
+        .tipodehabilidad > h2{
+            color: black;
+            background-color: rgba(255, 255, 255, 0.295);
+        }
+    .flechaabajo {
+        width: 0;
+        height: 0;
+        border-top: 25px solid var(--bordes);
+        border-left: 28px solid transparent;
+        border-right: 28px solid transparent;
+        cursor: pointer;
+    }
+    .flechaarriba {
+        margin-top: -23px;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-left: 28px solid transparent;
+        border-right: 28px solid transparent;
+        border-bottom: 28px solid var(--bordes);
+        cursor: pointer;
+    }
+        
+/*PROYECTOS*/
+
+.proyectos-container{
+    border: 3px solid var(--bordes);
+}
+    .tituloproyectos{
+        color: var(--text);
+        border-bottom: 2px solid var(--bordes);
+    }
+        .proyecto{
+            border: 3px inset var(--bordes);
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.384);
+            background: url("https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg");
+        }
+            .proyecto h1{
+                color: black;
+            }
+            .proyecto h2{
+                color: #101010;
+                background: rgba(85, 85, 85, 0.116);
+            }
+
+            .proyecto footer{
+                border: 1px solid rgb(24, 23, 23);
+
+                font-size: 18px;
+                color: rgb(0, 0, 0);
+
+                text-align: center;
+            }
+            .proyecto footer:hover{
+                background: var(--background-2);
+                color: white;
+                border: 1px solid rgb(0, 0, 0);
+            }
