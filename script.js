@@ -47,5 +47,14 @@ $(document).ready(function(){
         $('.activarNocturno').append(htmlvar);
     });
     
+    /*display proyects*/
+    /*display habilidades*/
 
+    $('.more-info-link-container-proyects').on('click', '.flechaabajo',function(event){
+        event.preventDefault();
+        
+        $(this).closest('.proyectos').find('.moreinfo-proyects').toggle(500, function(){console.log("se completo")});
+        $('.more-info-link-container-proyects').children().toggleClass('flechaarriba');
+        
+    });
 });
